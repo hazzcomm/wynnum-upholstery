@@ -3,86 +3,63 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="About Us" description="Wynnum Redlands Upholsterers - Quality upholstery since 1982. Meet Trevor and Glenda, your experienced local upholstery team.">
-  <!-- Hero -->
-  <section class="bg-stone-800 text-white py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl font-bold mb-4">About Wynnum Upholstery</h1>
-      <p class="text-xl text-stone-300">Quality craftsmanship in Brisbane's Bayside since 1982</p>
-    </div>
-  </section>
+  <div class="px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">About Us</h1>
 
-  <!-- About -->
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6">Our Story</h2>
-        <p class="text-stone-600 mb-6 text-lg">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-2">
+        <h2 class="text-xl font-bold mb-3">Our Story</h2>
+        <p class="text-stone-700 mb-4">
           Wynnum Redlands Upholsterers has been operating in the Wynnum Manly area since 1982. For over 40 years, we've built a reputation for quality workmanship and attention to detail.
         </p>
-        <p class="text-stone-600 mb-8 text-lg">
+        <p class="text-stone-700 mb-6">
           We specialise in recovering and refurbishing furniture, boat interiors and caravans, while we can also custom make furniture to suit your needs. Our focus has always been on quality, specialist work - never mass production.
         </p>
 
-        <!-- Team -->
-        <h2 class="text-3xl font-bold mb-6">Meet the Team</h2>
+        <h2 class="text-xl font-bold mb-3">Meet the Team</h2>
 
-        <div class="bg-stone-100 p-6 rounded-lg mb-6">
-          <h3 class="text-xl font-bold text-amber-600 mb-2">Trevor - Upholsterer</h3>
-          <p class="text-stone-600 mb-4">
+        <div class="bg-stone-100 p-4 rounded mb-4">
+          <h3 class="font-bold text-amber-700 mb-2">Trevor - Upholsterer</h3>
+          <p class="text-stone-700 text-sm mb-2">
             With over 35 years of professional experience in the trade, Trevor received apprentice of the year honours during both eligible years of his training.
           </p>
-          <p class="text-stone-600">
+          <p class="text-stone-700 text-sm">
             Trevor specialises in recovery work and custom projects requiring specialist expertise. Throughout his career, he has avoided mass production environments, focusing instead on quality craftsmanship for each individual project.
           </p>
         </div>
 
-        <div class="bg-stone-100 p-6 rounded-lg mb-8">
-          <h3 class="text-xl font-bold text-amber-600 mb-2">Glenda - Cutter & Machinist</h3>
-          <p class="text-stone-600">
+        <div class="bg-stone-100 p-4 rounded mb-6">
+          <h3 class="font-bold text-amber-700 mb-2">Glenda - Cutter & Machinist</h3>
+          <p class="text-stone-700 text-sm">
             With over 30 years in the upholstery trade, Glenda is recognised for her exceptional attention to detail and pattern matching capabilities. Her precision cutting and machining ensures every piece meets our high standards.
           </p>
         </div>
 
-        <!-- Why Choose Us -->
-        <h2 class="text-3xl font-bold mb-6">Why Choose Us?</h2>
-        <ul class="space-y-4 text-stone-600">
-          <li class="flex items-start">
-            <svg class="w-6 h-6 text-amber-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span><strong>40+ Years Experience</strong> - Established in 1982, we have decades of expertise</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-6 h-6 text-amber-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span><strong>Award-Winning Craftsman</strong> - Trevor was apprentice of the year twice</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-6 h-6 text-amber-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span><strong>Quality Focus</strong> - We don't do mass production, every piece gets individual attention</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-6 h-6 text-amber-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span><strong>Local Business</strong> - Proudly serving Wynnum, Manly and the Redlands</span>
-          </li>
+        <h2 class="text-xl font-bold mb-3">Why Choose Us?</h2>
+        <ul class="text-stone-700 space-y-2">
+          <li>✓ <strong>40+ Years Experience</strong> - Established in 1982</li>
+          <li>✓ <strong>Award-Winning Craftsman</strong> - Trevor was apprentice of the year twice</li>
+          <li>✓ <strong>Quality Focus</strong> - Every piece gets individual attention</li>
+          <li>✓ <strong>Local Business</strong> - Proudly serving Wynnum, Manly and the Redlands</li>
         </ul>
       </div>
-    </div>
-  </section>
 
-  <!-- CTA -->
-  <section class="py-16 bg-amber-600 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
-      <p class="text-xl text-amber-100 mb-8">Get in touch today for a free quote.</p>
-      <a href="/contact" class="bg-white text-amber-600 px-8 py-3 rounded font-semibold hover:bg-amber-50 transition inline-block">
-        Contact Us
-      </a>
+      <div class="space-y-4">
+        <img src="/images/restoredfurniture007.jpg" alt="Example of our work" class="w-full rounded shadow" />
+
+        <div class="bg-amber-50 p-4 rounded border border-amber-200">
+          <h3 class="font-bold mb-2">Contact Us</h3>
+          <p class="text-stone-700 text-sm mb-2">
+            <strong>Phone:</strong> <a href="tel:0407650550" class="text-amber-700">0407 650 550</a>
+          </p>
+          <p class="text-stone-700 text-sm mb-3">
+            Wynnum & Redlands Area
+          </p>
+          <a href="/contact" class="inline-block bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700 transition text-sm">
+            Get a Quote
+          </a>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 </Layout>

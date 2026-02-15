@@ -3,152 +3,75 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Furniture Upholstery Brisbane Bayside" description="Expert furniture upholstery, boat interiors & caravan reupholstery in Wynnum, Manly & Redlands. 40+ years experience. Quality craftsmanship since 1982.">
-  <!-- Hero -->
-  <section class="bg-gradient-to-br from-stone-800 to-stone-700 text-white py-20">
-    <div class="container mx-auto px-4">
-      <div class="max-w-3xl">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">Quality Upholstery in Brisbane's Bayside</h1>
-        <p class="text-xl text-stone-200 mb-8">
-          Recovering and refurbishing furniture, boat interiors and caravans since 1982. Custom-made furniture to suit your needs.
+  <!-- Main Content -->
+  <div class="px-4 py-8">
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Main text -->
+      <div class="md:col-span-2">
+        <p class="text-lg text-stone-700 mb-4">
+          Wynnum Redlands Upholsterers specialises in recovering and refurbishing <a href="/furniture" class="text-amber-700 hover:underline">furniture</a>, <a href="/boats" class="text-amber-700 hover:underline">boat interiors</a> and <a href="/caravans" class="text-amber-700 hover:underline">caravans</a> while we can also custom make furniture to suit your needs.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="/contact" class="bg-amber-600 hover:bg-amber-500 text-white px-8 py-3 rounded font-semibold transition text-center">
-            Get a Quote
-          </a>
-          <a href="tel:0407650550" class="border-2 border-white hover:bg-white hover:text-stone-800 px-8 py-3 rounded font-semibold transition text-center">
-            Call 0407 650 550
-          </a>
+        <p class="text-stone-700 mb-4">
+          If you think your upholstery needs a new look, feel free to <a href="/contact" class="text-amber-700 hover:underline">contact</a> Wynnum Redlands Upholsterers today. We can also arrange for your furniture to be polished by our polisher to complement your new upholstery.
+        </p>
+        <p class="text-stone-700 mb-6">
+          Please use the <a href="/contact" class="text-amber-700 hover:underline">contact form</a> to email us a photo of your furniture.
+        </p>
+
+        <!-- Two images side by side -->
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <img src="/images/chair-1-1511.jpg" alt="Recovered armchair" class="w-full rounded shadow" />
+          <img src="/images/043-Medium.jpg" alt="Modern upholstery" class="w-full rounded shadow" />
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="space-y-4">
+        <div class="bg-stone-100 p-4 rounded">
+          <h3 class="font-bold text-lg mb-2">Our Services</h3>
+          <ul class="space-y-1 text-stone-700">
+            <li><a href="/furniture" class="text-amber-700 hover:underline">→ Furniture Recovery</a></li>
+            <li><a href="/boats" class="text-amber-700 hover:underline">→ Boat Interiors</a></li>
+            <li><a href="/caravans" class="text-amber-700 hover:underline">→ Caravan Upholstery</a></li>
+            <li><a href="/gallery" class="text-amber-700 hover:underline">→ View Our Work</a></li>
+          </ul>
+        </div>
+
+        <div class="bg-amber-50 p-4 rounded border border-amber-200">
+          <h3 class="font-bold text-lg mb-2">Contact Us</h3>
+          <p class="text-stone-700 mb-2">
+            <strong>Phone:</strong> <a href="tel:0407650550" class="text-amber-700">0407 650 550</a>
+          </p>
+          <p class="text-stone-700 text-sm">
+            Wynnum & Redlands Area<br>
+            Serving Brisbane's Bayside since 1982
+          </p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Services Overview -->
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-4">Our Upholstery Services</h2>
-      <p class="text-center text-stone-600 mb-12 max-w-2xl mx-auto">From antique restoration to marine upholstery, we have the expertise to bring your furniture back to life.</p>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
-          <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Furniture</h3>
-          <p class="text-stone-600">Lounges, chairs, dining suites and custom pieces expertly recovered.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
-          <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Antiques</h3>
-          <p class="text-stone-600">Specialist restoration of antique and period furniture pieces.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
-          <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Boats</h3>
-          <p class="text-stone-600">Marine vinyl, yacht cushions and boat interior upholstery.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border border-stone-200">
-          <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Caravans</h3>
-          <p class="text-stone-600">Caravan cushions, mattresses and interior reupholstery.</p>
-        </div>
+    <!-- Recent Work -->
+    <div class="mt-8">
+      <h2 class="text-2xl font-bold mb-4">Recent Work</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="/gallery" class="block">
+          <img src="/images/IMAG0716-Medium.jpg" alt="Victorian Armchairs" class="w-full h-40 object-cover rounded shadow hover:opacity-90 transition" />
+          <p class="text-sm text-stone-600 mt-1">Victorian Armchairs</p>
+        </a>
+        <a href="/gallery" class="block">
+          <img src="/images/restoredfurniture007.jpg" alt="Antique Dressing Table" class="w-full h-40 object-cover rounded shadow hover:opacity-90 transition" />
+          <p class="text-sm text-stone-600 mt-1">Antique Restoration</p>
+        </a>
+        <a href="/gallery" class="block">
+          <img src="/images/020-Medium.jpg" alt="Chaise Lounge" class="w-full h-40 object-cover rounded shadow hover:opacity-90 transition" />
+          <p class="text-sm text-stone-600 mt-1">Chaise Lounge</p>
+        </a>
+        <a href="/gallery" class="block">
+          <img src="/images/IMG_0272-Medium.jpg" alt="Period Chair" class="w-full h-40 object-cover rounded shadow hover:opacity-90 transition" />
+          <p class="text-sm text-stone-600 mt-1">Period Chair</p>
+        </a>
       </div>
-
-      <div class="text-center mt-8">
-        <a href="/services" class="text-amber-600 hover:text-amber-700 font-semibold">View All Services &rarr;</a>
-      </div>
+      <p class="mt-4"><a href="/gallery" class="text-amber-700 hover:underline">View full gallery →</a></p>
     </div>
-  </section>
-
-  <!-- Featured Work -->
-  <section class="py-16 bg-stone-100">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-4">Recent Work</h2>
-      <p class="text-center text-stone-600 mb-12">A selection of our upholstery and restoration projects</p>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="relative overflow-hidden rounded-lg shadow-md group">
-          <img src="/images/IMAG0716-Medium.jpg" alt="Victorian Armchairs" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-            <p class="text-white text-sm font-medium">Victorian Armchairs</p>
-          </div>
-        </div>
-        <div class="relative overflow-hidden rounded-lg shadow-md group">
-          <img src="/images/restoredfurniture007.jpg" alt="Antique Dressing Table" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-            <p class="text-white text-sm font-medium">Antique Dressing Table</p>
-          </div>
-        </div>
-        <div class="relative overflow-hidden rounded-lg shadow-md group">
-          <img src="/images/dsc00824.jpg" alt="Cane Settee" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-            <p class="text-white text-sm font-medium">Cane Settee Recovery</p>
-          </div>
-        </div>
-        <div class="relative overflow-hidden rounded-lg shadow-md group">
-          <img src="/images/IMG_0272-Medium.jpg" alt="Period Chair" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
-            <p class="text-white text-sm font-medium">Period Chair Restoration</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-8">
-        <a href="/gallery" class="text-amber-600 hover:text-amber-700 font-semibold">View Full Gallery &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section class="py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Why Choose Wynnum Upholstery?</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-4xl font-bold text-amber-600 mb-2">40+</div>
-          <p class="text-stone-600">Years Experience</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-amber-600 mb-2">1982</div>
-          <p class="text-stone-600">Established</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-amber-600 mb-2">Local</div>
-          <p class="text-stone-600">Bayside Business</p>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-amber-600 mb-2">Quality</div>
-          <p class="text-stone-600">Craftsmanship</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-16 bg-amber-600 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-4">Ready to Refresh Your Furniture?</h2>
-      <p class="text-xl text-amber-100 mb-8">Send us a photo for a free quote on your upholstery project.</p>
-      <a href="/contact" class="bg-white text-amber-600 px-8 py-3 rounded font-semibold hover:bg-amber-50 transition inline-block">
-        Get a Free Quote
-      </a>
-    </div>
-  </section>
+  </div>
 </Layout>
