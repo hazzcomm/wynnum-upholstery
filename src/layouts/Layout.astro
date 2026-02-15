@@ -1,0 +1,127 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Quality furniture upholstery, boat interiors & caravan reupholstery in Brisbane's Bayside. 40+ years experience. Wynnum, Manly, Redlands." } = Astro.props;
+const siteName = "Wynnum Upholstery";
+const phone = "0407 650 550";
+---
+
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="upholstery, furniture recovery, boat upholstery, caravan upholstery, antique restoration, Wynnum, Manly, Redlands, Brisbane" />
+    <meta name="author" content="Wynnum Redlands Upholsterers" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://wynnumupholstery.com.au" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={`${title} | ${siteName}`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_AU" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | {siteName}</title>
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Wynnum Redlands Upholsterers",
+      "description": "Quality furniture upholstery, boat interiors & caravan reupholstery in Brisbane's Bayside since 1982.",
+      "telephone": "+61407650550",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wynnum",
+        "addressRegion": "QLD",
+        "addressCountry": "AU"
+      },
+      "areaServed": ["Wynnum", "Manly", "Redlands", "Cleveland", "Capalaba", "Brisbane"],
+      "priceRange": "$$"
+    }
+    </script>
+  </head>
+  <body class="min-h-screen bg-stone-50 text-stone-800">
+    <!-- Header -->
+    <header class="bg-stone-800 text-white">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div class="flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold">
+              <span class="text-amber-500">Wynnum</span> Upholstery
+            </a>
+            <button id="menu-toggle" class="md:hidden p-2">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+          <nav id="nav-menu" class="hidden md:block mt-4 md:mt-0">
+            <ul class="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-2 md:space-y-0">
+              <li><a href="/" class="block py-2 hover:text-amber-400 transition">Home</a></li>
+              <li><a href="/services" class="block py-2 hover:text-amber-400 transition">Services</a></li>
+              <li><a href="/about" class="block py-2 hover:text-amber-400 transition">About Us</a></li>
+              <li><a href="/contact" class="block py-2 hover:text-amber-400 transition">Contact</a></li>
+            </ul>
+          </nav>
+          <a href={`tel:${phone.replace(/\s/g, '')}`} class="hidden md:flex items-center bg-amber-600 hover:bg-amber-500 px-4 py-2 rounded font-semibold transition">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            {phone}
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-amber-500">Wynnum Upholstery</h3>
+            <p class="text-stone-300">Quality upholstery services in Brisbane's Bayside since 1982. Furniture, boats, caravans and more.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-amber-500">Contact</h3>
+            <p class="text-stone-300 mb-2">
+              <a href={`tel:${phone.replace(/\s/g, '')}`} class="hover:text-amber-400">{phone}</a>
+            </p>
+            <p class="text-stone-300">Wynnum & Redlands Area</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-amber-500">Services</h3>
+            <ul class="text-stone-300 space-y-1">
+              <li>Furniture Recovery</li>
+              <li>Boat Interiors</li>
+              <li>Caravan Upholstery</li>
+              <li>Antique Restoration</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-stone-700 mt-8 pt-8 text-center text-stone-400">
+          <p>&copy; {new Date().getFullYear()} Wynnum Redlands Upholsterers. Serving the Bayside since 1982.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('menu-toggle')?.addEventListener('click', () => {
+        document.getElementById('nav-menu')?.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
